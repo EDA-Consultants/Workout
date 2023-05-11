@@ -17,6 +17,7 @@ const HomeScreen = ({ navigation }) => {
     const logOut = () => {
         auth.signOut();
         navigation.replace('LoginScreen')
+        // for a commit
       };
 
     useEffect(() => {
