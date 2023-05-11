@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { KeyboardAvoidingView, StyleSheet, Text, TextInput, TouchableOpacity, View, Button,image } from 'react-native'
+=======
+import { KeyboardAvoidingView, StyleSheet, Text, TextInput, TouchableOpacity, View, Button,Image } from 'react-native'
+>>>>>>> f4a0426 (added a sign out button)
 import React, { useEffect, useState } from 'react'
 
 // Navigation
@@ -21,7 +25,16 @@ const HomeScreen = ({ navigation }) => {
                 <TouchableOpacity
                     onPress={logOut}
                 >
+<<<<<<< HEAD
                     <Text style={styles.buttonText}>Login</Text>
+=======
+                    <Image
+                    source={{
+                        uri:'https://img.icons8.com/?size=512&id=2445&format=png'
+                    }}
+                    style={styles.logOutImage}
+                     />
+>>>>>>> f4a0426 (added a sign out button)
                 </TouchableOpacity>
             )
 
@@ -48,5 +61,13 @@ const styles = StyleSheet.create({
     },
     smallText: {
         color: "#000000"
+<<<<<<< HEAD
+=======
+    },
+    logOutImage: {
+        width:25,
+        height:25,
+        marginRight:10
+>>>>>>> f4a0426 (added a sign out button)
     }
 })

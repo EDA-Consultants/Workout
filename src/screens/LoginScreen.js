@@ -13,6 +13,24 @@ import {createUserWithEmailAndPassword,onAuthStateChanged,signInWithEmailAndPass
 const LoginScreen = ({ navigation }) => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+<<<<<<< HEAD
+=======
+
+    useEffect(()=>{
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          // User is signed in, see docs for a list of available properties
+            navigation.replace("HomeScreen")
+          const uid = user.uid;
+          // ...
+        } else {
+          // User is signed out
+          // ...
+        }
+      });
+
+    },[])
+>>>>>>> f4a0426 (added a sign out button)
   
   
     const handleLogin = () => {
@@ -20,7 +38,10 @@ const LoginScreen = ({ navigation }) => {
         .then(userCredentials => {
           const user = userCredentials.user;
           console.log('Logged in with:', user.email);
+<<<<<<< HEAD
           navigation.replace("HomeScreen")
+=======
+>>>>>>> f4a0426 (added a sign out button)
         })
         .catch(error => alert(error.message))
     }
