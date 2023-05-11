@@ -9,10 +9,7 @@ import { KeyboardAvoidingView, StyleSheet, Text, TextInput, TouchableOpacity, Vi
 
 const Stack = createNativeStackNavigator()
 export default function App() {
-<<<<<<< HEAD
-=======
   
->>>>>>> f4a0426 (added a sign out button)
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="LoginScreen">
